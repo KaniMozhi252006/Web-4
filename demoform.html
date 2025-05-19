@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body{
+            background-color:#A35C7A;
+        }
+        .container{
+            background-color:#E6B2BA;
+            width:45%;
+            height:30%;
+            margin-left: 30%;
+            margin-top: 3%;
+            border-radius: 10px;
+            padding: 40px;
+        }
+        h2{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        .error { color: red; 
+            font-size: 14px; 
+            font-style: italic; 
+        }
+        .form-label{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Pawsome Meals - Order Form 🐾</h2>
+        <form id="petForm">
+            <div class="mb-3">
+                <label class="form-label">Your Name:</label>
+                <input type="text" id="name" class="form-control">
+                <small class="error" id="nameError"></small>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Email:</label>
+                <input type="email" id="email" class="form-control">
+                <small class="error" id="emailError"></small>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Phone Number:</label>
+                <input type="text" id="phone" class="form-control">
+                <small class="error" id="phoneError"></small>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Pet's Name:</label>
+                <input type="text" id="petName" class="form-control">
+                <small class="error" id="petNameError"></small>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Pet Type:</label>
+                <select id="petType" class="form-control">
+                    <option value="">Select</option>
+                    <option value="Dog">Dog</option>
+                    <option value="Cat">Cat</option>
+                    <option value="Bird">Bird</option>
+                    <option value="Other">Other</option>
+                </select>
+                <small class="error" id="petTypeError"></small>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Favorite Food:</label>
+                <input type="text" id="foodType" class="form-control">
+                <small class="error" id="foodTypeError"></small>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Quantity (kg):</label>
+                <input type="number" id="quantity" class="form-control">
+                <small class="error" id="quantityError"></small>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Delivery Address:</label>
+                <textarea id="address" class="form-control"></textarea>
+                <small class="error" id="addressError"></small>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Payment Method:</label>
+                <select id="paymentMethod" class="form-control">
+                    <option value="">Select</option>
+                    <option value="Credit Card">Credit Card</option>
+                    <option value="PayPal">PayPal</option>
+                    <option value="Cash on Delivery">Cash on Delivery</option>
+                </select>
+                <small class="error" id="paymentError"></small>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Delivery Date:</label>
+                <input type="date" id="deliveryDate" class="form-control">
+                <small class="error" id="dateError"></small>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Special Instructions:</label>
+                <textarea id="instructions" class="form-control"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-danger w-100">Place Order🐶</button>
+        </form>
+    </div>
+    <script src="script.js"></script><br>
+</body>
+</html>
