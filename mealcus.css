@@ -1,0 +1,26 @@
+body {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #fefefe;
+  }
+  
+  .pet-options img {
+    width: 100px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    transition: 0.3s;
+  }
+  
+  .pet-options img:hover {
+    border-color: #ffa500;
+  }
+  
+  #previewCard {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e3f2fd;
+    border-radius: 10px;
+  }
+  
